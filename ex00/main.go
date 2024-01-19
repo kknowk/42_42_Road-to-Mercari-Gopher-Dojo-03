@@ -5,8 +5,8 @@ import (
 	"github.com/fatih/color"
 	"github.com/gin-gonic/gin"
 	"omikuji/pkg/api"
-	"os"
 	"omikuji/pkg/cli"
+	"os"
 )
 
 func main() {
@@ -21,5 +21,9 @@ func main() {
 	}
 	// setup server
 	r := api.SetupServer()
-	r.Run(":" + port)
+	err = r.Run(":" + port)
+	if err != nil {
+		color.Red(err.Error())
+		os.Exit(1)
+	}
 }
