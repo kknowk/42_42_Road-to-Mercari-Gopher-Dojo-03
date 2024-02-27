@@ -47,10 +47,7 @@ Ginの機能を通じて、データのシリアライズとデシリアライ�
 > ```bash php
 > #!/bin/bash
 > curl localhost:4242
-> {"fortune":"Kyo","health":"You will fully recover, but stay attentive after you do.","residence": "
-You will have good fortune with a new house.","travel":"When traveling, you may find something
-to treasure.","study":"Things will be better. It may be worth aiming for a school in a
-different area.","love":"The person you are looking for is very close to you."}　(このように出力されます)
+> {"fortune":"Kyo","health":"You will fully recover, but stay attentive after you do.","residence": "You will have good fortune with a new house.","travel":"When traveling, you may find something to treasure.","study":"Things will be better. It may be worth aiming for a school in a different area.","love":"The person you are looking for is very close to you."}　(このように出力されます)
 > ```
 
 > - **ex00 test**
